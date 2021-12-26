@@ -26,11 +26,12 @@ func SumAllTails(numbersToSum ...[]int) []int {
 		if len(variableSlices) == 0 {
 			 number = append(number , 0)
 		 } else {
-		// 	 //talk to eli or lookup issues with empty slice pulling out of bounds error - panic: runtime error: slice bounds out of range [:1] with capacity 0 [recovered]
-        // panic: runtime error: slice bounds out of range [:1] with capacity 0
 			head := i[:1]
 			number = append(number, Sum(head))
 	 	}
 	}
 	 return number
  }
+
+ 		// 	 //talk to eli or lookup issues with empty slice pulling out of bounds error - panic: runtime error: slice bounds out of range [:1] with capacity 0 [recovered]
+        // panic: runtime error: slice bounds out of range [:1] with capacity 0

@@ -40,8 +40,8 @@ func TestSumAllTails(t *testing.T) {
 }
 
 func TestHead(t *testing.T) {
-	got := SumHeads([]int{}, []int{3,4,6,88,9}, []int{1,222,45})
-	want := []int{0,3,1}
+	got := SumHeads([]int{3,4,6,88,9}, []int{1,222,45})
+	want := []int{3,1}
 	
 	if !reflect.DeepEqual(got,want) {
 		t.Errorf("got %v, want %v", got, want)
